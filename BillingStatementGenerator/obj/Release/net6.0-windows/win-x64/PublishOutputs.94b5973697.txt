@@ -1,0 +1,9 @@
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\BillingStatementGenerator.pdb
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\kfpt billing format.html
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\logo.png.jpg
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\D3DCompiler_47_cor3.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\PenImc_cor3.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\PresentationNative_cor3.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\vcruntime140_cor3.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\wpfgfx_cor3.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\win-x64\BillingStatementGenerator.exe

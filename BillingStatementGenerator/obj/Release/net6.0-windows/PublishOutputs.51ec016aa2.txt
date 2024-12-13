@@ -1,0 +1,8 @@
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\kfpt billing format.html
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\logo.png.jpg
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\BillingStatementGenerator.exe
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\BillingStatementGenerator.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\BillingStatementGenerator.deps.json
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\BillingStatementGenerator.runtimeconfig.json
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\BillingStatementGenerator.pdb
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Release\net6.0-windows\publish\Newtonsoft.Json.dll

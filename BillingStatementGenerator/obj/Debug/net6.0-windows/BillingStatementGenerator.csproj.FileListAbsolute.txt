@@ -1,0 +1,26 @@
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\BillingStatementGenerator.exe
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\BillingStatementGenerator.deps.json
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\BillingStatementGenerator.runtimeconfig.json
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\BillingStatementGenerator.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\BillingStatementGenerator.pdb
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.csproj.AssemblyReference.cache
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\App.g.cs
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator_MarkupCompile.cache
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator_MarkupCompile.lref
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\MainWindow.baml
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.g.resources
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.AssemblyInfoInputs.cache
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.AssemblyInfo.cs
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.csproj.CoreCompileInputs.cache
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.csproj.CopyComplete
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\refint\BillingStatementGenerator.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.pdb
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator.genruntimeconfig.cache
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\ref\BillingStatementGenerator.dll
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\kfpt billing format.html
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\bin\Debug\net6.0-windows\logo.png.jpg
+D:\APPS\BillingStatementGenerator\BillingStatementGenerator\obj\Debug\net6.0-windows\BillingStatementGenerator_Content.g.cs

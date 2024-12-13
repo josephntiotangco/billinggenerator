@@ -1,0 +1,144 @@
+﻿<Window x:Class="BillingStatementGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BillingStatementGenerator"
+        mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="KFPT Billing Generator" Height="900" Width="800" WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="---- Setup Header Details Here Here ----" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+            <Grid Grid.Row="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Billing No: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left"  x:Name="tbBillingReference" Text="{Binding HeaderBillingNo}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Bill To: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left"  x:Name="tbCustomerName" Text="{Binding HeaderCustomerName}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Bill To Address: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Width="340" Height="30"  HorizontalAlignment="Left" x:Name="tbCustomerAddress" Text="{Binding HeaderCustomerAddress}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Bill To Contact: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left" x:Name="tbCustomerContact" Text="{Binding HeaderCustomerContact}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Bill Date: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <DatePicker Grid.Row="4" Grid.Column="1" x:Name="dtpBillDate" Width="150" HorizontalAlignment="Left" SelectedDate="{Binding HeaderBillDate}" KeyDown="tbBillRemarks_KeyDown"/>
+                <TextBlock Grid.Row="5" Grid.Column="0" Text="Bill Due Date: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <DatePicker Grid.Row="5" Grid.Column="1" x:Name="dtpDueDate" Width="150" HorizontalAlignment="Left" SelectedDate="{Binding HeaderBillDueDate}" KeyDown="tbBillRemarks_KeyDown"/>
+                <TextBlock Grid.Row="6" Grid.Column="0" Text="Biller Name: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="6" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left" x:Name="tbBillerName" Text="{Binding HeaderBiller}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="7" Grid.Column="0" Text="Biller Address: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="7" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left" x:Name="tbBillerAddress" Text="{Binding HeaderBillerAddress}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="8" Grid.Column="0" Text="Biller Contact: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="8" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left" x:Name="tbBillerContact" Text="{Binding HeaderBillerContact}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="9" Grid.Column="0" Text="Biling Terms: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="9" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left" x:Name="tbBillTerms" Text="{Binding HeaderBillerTerm}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="10" Grid.Column="0" Text="Remarks: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="10" Grid.Column="1" Width="340" Height="30" HorizontalAlignment="Left" x:Name="tbBillRemarks" Text="{Binding HeaderBillerRemark}" KeyDown="tbBillRemarks_KeyDown" VerticalAlignment="Center" Margin="5"/>
+            </Grid>
+            <Button Grid.Row="2" Content="Save Header Details" Margin="5" x:Name="btnSaveHeader" Click="btnSaveHeader_Click"/>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="---- Add Items To Billings Here ----" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>
+            <Grid Grid.Row="1" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Item Description" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Width="200" Height="30" HorizontalAlignment="Left" x:Name="tbItemDescription" KeyDown="tbItemUOM_KeyDown" Text="{Binding NewItemDescription}" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Item Reference" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Width="150" Height="30" HorizontalAlignment="Left" x:Name="tbItemReference" KeyDown="tbItemUOM_KeyDown" Text="{Binding NewItemReference}" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Item Price" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Width="150" Height="30" HorizontalAlignment="Left" x:Name="tbItemPrice" KeyDown="tbItemUOM_KeyDown" Text="{Binding NewItemPrice,StringFormat={}{0:#,0.0}}" VerticalAlignment="Center" Margin="5"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Item Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Width="150" Height="30" HorizontalAlignment="Left" x:Name="tbItemQuantity" KeyDown="tbItemUOM_KeyDown" Text="{Binding NewItemQuantity,StringFormat={}{0:#,0.0}}" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="Item UOM" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+                <TextBox Grid.Row="4" Grid.Column="1" Width="150" Height="30" HorizontalAlignment="Left" x:Name="tbItemUOM" Text="{Binding NewItemUOM}" KeyDown="tbItemUOM_KeyDown" VerticalAlignment="Center" Margin="5"/>
+
+                <TextBlock Grid.Row="5" Grid.Column="0" Text="Item Price" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5"/>
+                <DatePicker Grid.Row="5" Grid.Column="1" Width="150" Height="30" HorizontalAlignment="Left" SelectedDate="{Binding NewItemDate}" KeyDown="tbItemUOM_KeyDown" x:Name="dtpNewItemDate" SelectedDateFormat="Short"  VerticalAlignment="Center" Margin="5"/>
+            </Grid>
+            <Button Grid.Row="2" Content="Add Item To Billing" Margin="5" x:Name="btnAddItemToBilling" Click="btnAddItemToBilling_Click"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="Total Amount Due :" Margin="5"/>
+                <TextBlock HorizontalAlignment="Right" Width="150" Foreground="Black" FontWeight="Bold" FontSize="15" Text="{Binding TotalAmountDue,StringFormat={}{0:#,0.0}}" />
+            </StackPanel>
+            <DataGrid Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      AlternatingRowBackground="LightCyan"
+                      ItemsSource="{Binding newBillingItems, Mode=TwoWay}"
+                      SelectedItem="{Binding SelectedBillingItem}"
+                      x:Name="dgItems"
+                      KeyDown="DataGrid_KeyDown"
+                      VerticalScrollBarVisibility="Auto"
+                      >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+                    <DataGridTextColumn Header="Description" Binding="{Binding Description}" />
+                    <DataGridTextColumn Header="Date" Binding="{Binding TransDate}" />
+                    <DataGridTextColumn Header="Reference" Binding="{Binding Reference}" />
+                    <DataGridTextColumn Header="Price" Binding="{Binding Price}" />
+                    <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" />
+                    <DataGridTextColumn Header="UOM" Binding="{Binding UOM}" />
+                    <DataGridTextColumn Header="Subtotal" Binding="{Binding Subtotal}" />                    
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Grid.Row="2" Orientation="Vertical">
+                <Button  Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Center"  Margin="5" Content="Save and Print to PDF" x:Name="btnSavePrint" Click="btnSavePrint_Click"/>
+                <Button  Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Center"  Margin="5" Content="Cancel" x:Name="btnCancel" Click="btnCancel_Click"/>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>
